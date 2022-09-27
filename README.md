@@ -1,1 +1,1 @@
-# Yiying
+# info-tech-assignment
