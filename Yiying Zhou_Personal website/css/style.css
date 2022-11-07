@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'RobotoBlackItalic';
+  src: url('../fonts/RobotoBlackItalic.eot');
+  src: url('../fonts/RobotoBlackItalic.eot') format('embedded-opentype'), url('../fonts/RobotoBlackItalic.woff2') format('woff2'), url('../fonts/RobotoBlackItalic.woff') format('woff'), url('../fonts/RobotoBlackItalic.ttf') format('truetype'), url('../fonts/RobotoBlackItalic.svg#RobotoBlackItalic') format('svg');
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../fonts/RobotoBold.eot');
+  src: url('../fonts/RobotoBold.eot') format('embedded-opentype'), url('../fonts/RobotoBold.woff2') format('woff2'), url('../fonts/RobotoBold.woff') format('woff'), url('../fonts/RobotoBold.ttf') format('truetype'), url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../fonts/RobotoLight.eot');
+  src: url('../fonts/RobotoLight.eot') format('embedded-opentype'), url('../fonts/RobotoLight.woff2') format('woff2'), url('../fonts/RobotoLight.woff') format('woff'), url('../fonts/RobotoLight.ttf') format('truetype'), url('../fonts/RobotoLight.svg#RobotoLight') format('svg');
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../fonts/RobotoRegular.eot');
+  src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'), url('../fonts/RobotoRegular.woff2') format('woff2'), url('../fonts/RobotoRegular.woff') format('woff'), url('../fonts/RobotoRegular.ttf') format('truetype'), url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('../fonts/RobotoMedium.eot');
+  src: url('../fonts/RobotoMedium.eot') format('embedded-opentype'), url('../fonts/RobotoMedium.woff2') format('woff2'), url('../fonts/RobotoMedium.woff') format('woff'), url('../fonts/RobotoMedium.ttf') format('truetype'), url('../fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h2 {
+  font-family: Bold;
+}
+ul {
+  list-style: none;
+}
+.wrap {
+  width: calc(100% - 7%);
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.logo {
+  color: #FFAA1F;
+}
+.flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.between {
+  justify-content: space-between;
+}
+.text-left {
+  text-align: left;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 45px;
+}
+.logo span {
+  font-family: 'RobotoBold';
+}
+.wrap > header .nav a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #1B1B1B;
+  opacity: 0.6;
+  position: relative;
+  margin: 0 0.5rem;
+  font-family: 'RobotoLight';
+}
+.wrap > header .nav a.active {
+  color: #1B1B1B;
+  opacity: 1;
+}
+.wrap > header .nav a:hover::after,
+.wrap > header .nav a.active::after {
+  opacity: 1;
+  transform: none;
+}
+.wrap > header .nav a::after {
+  content: '';
+  transition: 0.33s ease;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  bottom: -6px;
+  left: 0;
+  opacity: 0;
+  transform: translateY(5px);
+}
+.Work {
+  margin-top: 112px;
+}
+.Work .grid {
+  flex: 0 0 50%;
+}
+.Work .grid h3 {
+  font-family: 'RobotoBold';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+.Work .grid p {
+  font-family: 'RobotoBold';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+#content .grid:nth-of-type(odd) {
+  padding-right: 26px;
+}
+#content .grid:nth-of-type(even) {
+  padding-left: 26px;
+}
+#content a:hover {
+  color: #FFAA1F;
+}
+#content .card h3 {
+  font-family: 'RobotoBold';
+  margin-top: 24px;
+}
+#content .card p {
+  margin-bottom: 60px;
+  font-family: 'RobotoRegular';
+}
+#content .card .cardPhoto img {
+  width:100%;
+}
+.about {
+  margin-top: 77px;
+}
+.about .aboutLeft {
+  flex: 0 0 50%;
+}
+.about .aboutLeft h3 {
+  font-family: 'RobotoBold';
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 67px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about .aboutLeft h3 img {
+  width: 6%;
+}
+.about .aboutLeft .meInformation {
+  font-family: 'RobotoLight';
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #1B1B1B;
+}
+.about .aboutLeft .meInformation p {
+  margin-bottom: 40px;
+}
+.about .aboutLeft .contact {
+  font-family: 'RobotoBold';
+  margin-top: 60px;
+}
+.about .aboutLeft .contact h4 {
+  margin-bottom: 18px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.skills {
+  padding: 70px 0;
+}
+.skills table,
+.skills tr,
+.skills th,
+.skills td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+.skills table {
+  width: 100%;
+}
+.skills th {
+  font-family: 'bolds';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  padding: 17px 0;
+}
+.skills td {
+  padding: 12px 0;
+  text-align: center;
+  font-family: 'RobotoBold';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.gourment .gourmentTitle h3 {
+  font-family: 'RobotoBold';
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 67px;
+  text-align: center;
+  padding: 40px 0;
+}
+.gourment .gourmentTitle p {
+  font-family: 'RobotoBold';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+.gourment .gourmentTextList ul .group {
+  font-family: 'RobotoBold';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #1B1B1B;
+}
+
+.gourment .gourmentTextList ul .once {
+  font-family: 'RobotoBold';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #1B1B1B;
+  opacity: 0.5;
+}
+
+
+.gourment .photoList .photoGroup img {
+  width: 100%;
+  height: 683px;
+}
+.photoList {
+  margin-top: 70px;
+}
+.photoList .photoGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photoList .photoGroup > div {
+  flex: 0 0 32%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.photoList .photoGroup > div:nth-of-type(3),
+.photoList .photoGroup > div:nth-of-type(6),
+.photoList .photoGroup > div:nth-of-type(9) {
+  margin: 0;
+}
+.blooming .photoList .photoGroup img {
+  height: 234px;
+}
+.Video {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+.Video video {
+  width: 100%;
+  height: 700px;
+}
+.text {
+  font-family: 'RobotoLight';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+footer {
+  text-align: center;
+  font-family: 'RobotoRegular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #1B1B1B;
+  opacity: 0.6;
+}
